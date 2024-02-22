@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Mulish:wght@200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: #d7d6d6;
+    color: black;
+}
+
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-size: 1.5rem;
+    font-family: "Dosis", sans-serif;
+    text-decoration: none;
+    color: black;
+
+}
+
+.apresentacao {
+    padding: 7% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.875rem;
+    font-family: "Mulish", sans-serif;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: "Dosis", sans-serif;
+}
+
+.subtitulo {
+    font-family: "Dosis", sans-serif;
+}
+
+.apresentacao__redes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.apresentacao__redes__link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: "Dosis", sans-serif;
+    text-decoration: none;
+    /* background-color: #5d5e60; */
+    border: 5px solid #5d5e60;
+    width: 50%;
+    border-radius: 20px;
+    padding: 15px;
+}
+.apresentacao__redes__link:hover {
+    background-color: #5d5e60;
+}
+
+.imagem {
+    width: 40%;
+}
+
+
+.rodape {
+    color: black;
+    background-color: #5d5e60;
+    text-align: center;
+    padding: 24px;
+}
+
+
+.apresentacao__conteudo__texto a{
+    text-decoration: none;
+    color: #5d5e60;
+}
+
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
